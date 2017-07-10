@@ -1,0 +1,25 @@
+<form action="/result" method="post">
+    <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+   Your Name: <input type="text" name="name">
+   <br>
+   <br>
+   Dojo Location: <select name="location">
+                        <option> Mountain View </option>
+                        <option> Seattle </option>
+                        <option> New York  </option>
+                        <option> Chicago </option>
+                    </select>
+    <br>
+    <br>
+    Favorite Language: <select name="language">
+                        <option> Mean </option>
+                        <option> Ruby </option>
+                        <option> Python  </option>
+                        <option> JavaScript </option>
+                    </select>
+    <br>
+    <br>
+    Comment(optional): <textarea name="comment"> </textarea>
+
+    <input type="submit">
+</form>
